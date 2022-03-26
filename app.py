@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from Landing.db import db
+from Landing.db import landingdb
 from routes.msg import msg
 
 app = Flask(__name__)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{% block title %}{% endblock %}</title>
+
+{% block contents %}
+<h1>Leave a message</h1>
+<p>Leaves us a mssg plis</p>
+<br>
+<form action="#" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.nombre.label }}
+    {{ form.nombre }}
+    {{ form.apellido.label }}
+    {{ form.apellido }}
+    {{ form.correo.label }}
+    {{ form.correo }}
+    {{ form.mensaje.label }}
+    {{ form.mensaje }}
+    {{ form.submit }}
+</form>
+{% block contents %}{% endblock %}
+
