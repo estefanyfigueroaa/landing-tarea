@@ -20,7 +20,7 @@ def messages():
         landingdb.session.add(newMessage)
         landingdb.session.commit()
         return redirect(url_for("msg.messages"))
-    return render_template("home.html", form=form)
+    return render_template("index.html", form=form)
 
 
 @msg.route("/messagen")
