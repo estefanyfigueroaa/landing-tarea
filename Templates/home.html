@@ -1,9 +1,42 @@
 {% extends 'base.html' %}
 {% block title %}order create{% endblock %}
+
 {% block contents %}
-<h1>order create</h1>
+<h1> Visita Noruega</h1>
+<a id= "news">Noticias</a>
+<p>Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros. Oslo, su capital, es una ciudad de áreas verdes y museos. En el Museo de barcos vikingos de Oslo, se muestran navíos vikingos preservados del siglo IX. Bergen, con coloridas casas de madera, es el punto de partida de los cruceros hacia el sorprendente fiordo de Sogn. Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente en el centro olímpico Lillehammer. (De Wikipedia) </p>
+<img src="Imagenes/circle.png" alt=""class="circleimage">
+<body>
+    <h1>Top 3 lugares para vsisitar en Noruega/h1>
+        <h2>Oslo y alrededores</h2> Oslo y alrededores
+            <p>.  En la capital noruega, que fue nombrada además Capital verde europea de 2019, hay mil y una cosas que ver y hacer. Su innovadora escena gastronómica, sus modernos y vibrantes barrios, un montón de planes y eventos durante todo el año y nuevos museos y reclamos turísticos son solo un anticipo de todo lo que te espera en Oslo. Ya que la ciudad está rodeada por el fiordo de Oslo y por densos bosques, aquí puedes combinar una escapada urbana con diversión al aire libre montando en bicicleta, haciendo esquí o visitando algunas de sus islas en un mismo día. En las cercanas zonas de Østfold y Vestfold encontrarás un sinfín de localidades costeras con encanto, como Fredrikstad o Tønsberg. Y a aproximadamente una hora de Oslo en coche está Hadeland, un nuevo destino artístico en el que podrás visitar el Museo Kistefos y la espectacular sala de exposiciones The Twist.</p>
+        <h2>Tromsø y el reino de las auroras boreales</h2>
+            <p>Conocida como la capital del Ártico, Tromsø se encuentra en pleno centro del Norte de Noruega. Si tu lista de cosas por hacer incluye ver la aurora boreal, el sol de medianoche, avistar ballenas o grandes aventuras en la naturaleza, sin duda has de venir aquí. Disfruta de condiciones perfectas para hacer esquí de travesía en la zona de Lyngenfjord, descubre la cultura sami en sitios como Karasjok o Alta, y alcanza el remoto Cabo Norte, en el extremo septentrional de Europa. En la parte más oriental de esta extensa región encontrarás la península de Varanger, un auténtico paraíso para los aficionados a la observación de aves. Sal a pescar cangrejos reales o de paseo en trineo de perros en Kirkenes, donde también puedes pasar la noche en un hotel de hielo. En los alrededores de Tromsø te esperan algunas islas casi vírgenes, como Senja, Kvaløya y Sommarøy.</p>
+        <h2>Lofoten y Nordland</h2>
+            <p>mpresionantes cumbres, fiordos resplandecientes, genuinas aldeas de pescadores y playas de postal ¡Sin olvidar las auroras boreales y el sol de medianoche! Seguro que ya has visto en Instagram fotografías impresionantes de las islas Lofoten y el archipiélago de Vesterålen (¡las hay a montones!). Es buena idea visitar estos lugares fuera de temporada alta, es decir, tras el verano, para evitar coincidir con muchos otros turistas. Fantásticas aventuras al aire libre te esperan en Narvik, paraíso para el senderismo y el esquí. Una joya menos conocida es Helgeland, un poco más al sur. Allí puedes conducir a través de una de las carreteras más hermosas del mundo: la Kystriksveien, o la vía de la costa, entre Trøndelag y Bodø. La animada localidad costera de Bodø es la más grande de la provincia de Nordland y cuenta con un montón de planes divertidos en la naturaleza, además de una creciente escena cultural. De hecho, Bodø será en 2024 una de las capitales europeas de la cultura.</p>
+
+    <main>
+        <a id= "Acercade">Acerca de</a>
+        <section class="Info">
+            <img src="Imagenes/circle.png" alt=""class="circleimage">
+            <h2>Hola soy Estefany Figueroa, tu asistente de viajes</h2>
+            <h3>Estefany Marcela Figueroa Romero</h3>
+            <h4>Ingenieria de Negocios</h4>
+            <h3>Telefono: 76105794</h3>
+            <h3>Email: 20204019@esen.edu.sv</h3>
+            <h3>Direccion: Gardens of the top</h3>
+            <a  href="https://github.com/estefanyfigueroaa"><img src="Imagenes/github.png" alt="Git Hub"class= "socialicon"></a>
+            <a  href="https://www.linkedin.com/in/emfr-esen/"><img src="Imagenes/linked in.png" alt="Linked In"class= "socialicon"></a>
+            <a  href="https://twitter.com/marcelafigu_?t=0_WNeUS3H7j7RKf86VYKZA&s=09"><img src="Imagenes/Twitter.png" alt="Twitter"class= "socialicon"></a>
+
+            <!-- Seccion de contacto -->
+    </section>
+</main>
+</body>
 <br>
-<p>please create your order here:</p>
+<a id= "Contactpage">Contact page</a>
+<h1>Contactanos</h1>
+<p>Cualquier duda que tengas, no dudes en contactarnos:</p>
 <br>
 <form action="{{ url_for('msg.messages') }}" method="POST">
     {{ form.hidden_tag() }}
@@ -19,6 +52,13 @@
 </form>
 
 {% endblock %}
+<footer>
+    <div class="icons">
+        <h3>Encuentrame en:</h3>
+        <a  href="https://github.com/estefanyfigueroaa"><img src="Imagenes/github.png" alt="Git Hub"class= "socialicon"></a>
+        <a  href="https://www.linkedin.com/in/emfr-esen/"><img src="Imagenes/linked in.png" alt="Linked In"class= "socialicon"></a>
+        <a  href="https://twitter.com/marcelafigu_?t=0_WNeUS3H7j7RKf86VYKZA&s=09"><img src="Imagenes/Twitter.png" alt="Twitter"class= "socialicon"></a>
+    </div>
 
 
 
